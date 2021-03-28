@@ -1,0 +1,9 @@
+[submodule "entropybeacon/vendor/passphrase"]
+	path = entropybeacon/vendor/passphrase
+	url = https://github.com/HacKanCuBa/passphrase-py
+[submodule "vendor/passphrase"]
+	path = vendor/passphrase
+	url = https://github.com/HacKanCuBa/passphrase-py
+[submodule "vendor/skydb"]
+	path = vendor/skydb
+	url = https://github.com/PowerLoom/py-skydb
