@@ -2,6 +2,9 @@ from vendor.skydb import skydb
 import arrow
 import os
 
+__location__ = os.path.realpath(
+    os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
 try:
     from config import portal
 except ImportError:
@@ -10,7 +13,7 @@ except ImportError:
 
 seed = None
 try:
-    with open('skynet_ed25519.seed') as f:
+    with open(os.path.join(__location__, 'skynet_ed25519.seed')) as f:
         seed = f.read()
 except:
     print('\n\nSeed file not found. Did you run generate.py?\n\n')
