@@ -1,5 +1,6 @@
 from vendor.skydb import skydb
 import arrow
+import json
 import os
 
 __location__ = os.path.realpath(
@@ -70,5 +71,5 @@ def update():
             'revision': data_revision}
 
 if __name__ == '__main__':
-    print(update())
+    json.dumps(update())
 
