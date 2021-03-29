@@ -71,5 +71,5 @@ def update():
             'revision': data_revision}
 
 if __name__ == '__main__':
-    json.dumps(update())
+    print(json.dumps(update()))
 
