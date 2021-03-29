@@ -1,4 +1,5 @@
 from vendor.skydb import skydb
+from time import sleep
 import arrow
 import json
 import os
@@ -72,4 +73,5 @@ def update():
 
 if __name__ == '__main__':
     print(json.dumps(update()))
-
+    sleep(30)
+    print(json.dumps(update()))
